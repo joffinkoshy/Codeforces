@@ -1,0 +1,9 @@
+pyproject.toml
+cf_sync/__init__.py
+cf_sync/cf_api.py
+cf_sync.egg-info/PKG-INFO
+cf_sync.egg-info/SOURCES.txt
+cf_sync.egg-info/dependency_links.txt
+cf_sync.egg-info/entry_points.txt
+cf_sync.egg-info/requires.txt
+cf_sync.egg-info/top_level.txt

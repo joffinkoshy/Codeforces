@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cf-sync"
+version = "0.1.0"
+description = "A CLI tool to automatically synchronize Codeforces solutions to a GitHub repository with stats dashboard"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Codeforces Sync Developer" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.0",
+    "gitpython>=3.1.0",
+]
+
+[project.scripts]
+cf-sync = "cf_sync.cli:main"

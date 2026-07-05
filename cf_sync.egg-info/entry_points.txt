@@ -1,0 +1,2 @@
+[console_scripts]
+cf-sync = cf_sync.cli:main

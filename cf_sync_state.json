@@ -1,0 +1,39 @@
+{
+  "last_processed_submission_id": 381351139,
+  "synced_submissions": {
+    "381348347": {
+      "submissionId": 381348347,
+      "contestId": 1873,
+      "problemIndex": "E",
+      "problemName": "Building an Aquarium",
+      "rating": 1100,
+      "tags": [
+        "binary search",
+        "sortings"
+      ],
+      "language": "PyPy 3-64",
+      "solvedDate": "2026-07-05 20:49:22",
+      "creationTimeSeconds": 1783264762,
+      "timeConsumedMillis": 218,
+      "memoryConsumedBytes": 27340800,
+      "relativeSolutionPath": "1100/1873E/solution.py"
+    },
+    "381351139": {
+      "submissionId": 381351139,
+      "contestId": 1675,
+      "problemIndex": "B",
+      "problemName": "Make It Increasing",
+      "rating": 900,
+      "tags": [
+        "greedy",
+        "implementation"
+      ],
+      "language": "PyPy 3-64",
+      "solvedDate": "2026-07-05 21:17:02",
+      "creationTimeSeconds": 1783266422,
+      "timeConsumedMillis": 125,
+      "memoryConsumedBytes": 6041600,
+      "relativeSolutionPath": "900/1675B/solution.py"
+    }
+  }
+}
