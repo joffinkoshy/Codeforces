@@ -1,0 +1,32 @@
+name: Codeforces Submissions Sync
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs automatically every 6 hours
+  workflow_dispatch:      # Allows you to trigger it manually via the GitHub Actions tab
+
+permissions:
+  contents: write         # Allows the GitHub Actions runner to commit and push changes back to the repo
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true # Ensures git push uses the runner's built-in token
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies and cf-sync
+        run: |
+          pip install .
+
+      - name: Run CF-Sync
+        run: |
+          cf-sync sync --handle "joffinkoshy" --local-dir "./solutions" --repo-dir "." --git-sync
