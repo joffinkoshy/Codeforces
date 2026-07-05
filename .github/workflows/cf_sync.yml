@@ -1,9 +1,12 @@
 name: Codeforces Submissions Sync
 
 on:
+  push:
+    paths:
+      - 'solutions/**' # Triggers immediately whenever you push new files to solutions/
   schedule:
-    - cron: '0 */6 * * *' # Runs automatically every 6 hours
-  workflow_dispatch:      # Allows you to trigger it manually via the GitHub Actions tab
+    - cron: '0 */12 * * *' # Runs twice a day as a backup
+  workflow_dispatch:      # Allows manual triggers from GitHub website
 
 permissions:
   contents: write         # Allows the GitHub Actions runner to commit and push changes back to the repo
